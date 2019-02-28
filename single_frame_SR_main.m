@@ -88,8 +88,8 @@ addpath('MATLAB/superres/line/');
 addpath('MATLAB/superres/eigenpatches/');
 addpath('MATLAB/superres/regress/');
 addpath('MATLAB/superres/dict_select/');
-addpath('MATLAB/dict_select/');
-addpath('MATLAB/nearest_neighbors/');
+%addpath('MATLAB/dict_select/');
+%addpath('MATLAB/nearest_neighbors/');
 addpath('MATLAB/superres/nearest_neighbors/');
 addpath('MATLAB/SparseLab2.1-Core/Solvers/');
 
