@@ -115,7 +115,8 @@ y = yp_s/norm(yp_s,2);
 
 N = size(A,2);
 % Invoke the sparselab implementation of OMP
-sols = SolveBP(A,y,N,20,delta);
+%sols = SolveBP(A,y,N,20,delta);
+evalc('sols = SolveBP(A,y,N,20,delta)');
 
 % Derive the total energy
 energy = sum(abs(sols));
