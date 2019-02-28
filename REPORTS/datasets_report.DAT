@@ -1,0 +1,15 @@
+--------------------------------------------------------------------------------
+DATASETS REPORT
+--------------------------------------------------------------------------------
+Five different datasets were considered in the implementation
+of this experiment: Colorferet, MEDS, AR, Multi-Pie, and FRGC
+The AR dataset was used to build up the training set to be used to
+train the face recognition algorithm. This resulted in 895 images
+used to train the face recognizer. The Gallery consists of 889 faces which
+considers one photo per subject, and includes unique subjects from the MEDS
+and FRGC dataset (controlled environment). The probe set consists of 930
+images taken from the FRGC dataset (uncontrolled environment).
+The dictionary to be used to train the super-resolution methods
+consists of 4933 images (1203 unique subjects) which combines images from 
+both the ColorFeret and Multi-Pie datasets.
+--------------------------------------------------------------------------------
