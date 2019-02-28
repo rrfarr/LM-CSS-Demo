@@ -167,7 +167,8 @@ elseif strcmp(SR_method, 'KSS_RR')
     config.method_fullname = 'KSS_RR';
     config.neighbor_selection_preprocess = 0;    
     config.graph_construction = [];
-elseif strcmp(SR_method, 'BPAD_RR')
+%elseif strcmp(SR_method, 'BPAD_RR')
+elseif strcmp(SR_method, 'LM_CSS')
     config.patch_data.patch_based = 1;
     config.algorithm.learning_based = 1;
     config.dictionary_selection = 0;
@@ -176,7 +177,8 @@ elseif strcmp(SR_method, 'BPAD_RR')
     if strcmp(config.stitch_method,'Quilting')
         config.method_fullname = 'BPAD_RR_Quilting';
     else
-        config.method_fullname = 'BPAD_RR';
+        %config.method_fullname = 'BPAD_RR';
+        config.method_fullname = 'LM_CSS';
     end
     config.neighbor_selection_preprocess = 0;    
     config.graph_construction = [];

@@ -51,7 +51,7 @@ elseif strcmp(SR_config.SR_method,'KSS_RR')
     % patch. This k sparse support are then used to reconstruct the actual
     % patch.
     IH = KSS_RR_SR(LR, SR_config);
-elseif strcmp(SR_config.SR_method,'BPAD_RR') || strcmp(SR_config.SR_method,'BPAD_RR_Gallery')
+elseif strcmp(SR_config.SR_method,'LM_CSS')%strcmp(SR_config.SR_method,'BPAD_RR') || strcmp(SR_config.SR_method,'BPAD_RR_Gallery')
     IH = BPAD_RR_SR(LR, SR_config);
 elseif strcmp(SR_config.SR_method,'BPAD_RR_V2')
     IH = BPAD_RR_V2_SR(LR, SR_config);

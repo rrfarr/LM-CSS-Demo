@@ -96,7 +96,8 @@ addpath('MATLAB/SparseLab2.1-Core/Solvers/');
 %--------------------------------------------------------------
 % CONFIGURATION
 %--------------------------------------------------------------
-SR_method     = 'BPAD_RR';          % SR Method
+%SR_method     = 'BPAD_RR';          % SR Method
+SR_method = 'LM_CSS';
 resolutions   = [8,10,15,20];         % Resolutions considered
 stitch_method = 'Average';         % Specify the way how patches are stiched (Average, Quilting)
 dx_ref = 40;                        % Specify the reference distance between the eyes
@@ -124,7 +125,8 @@ elseif strcmp(SR_method, 'KSS_RR')
                              % quality and texture consistency
     % Specify the regularization parameter for ridge regression 
     in_config.param.lambda = 1E-6;  % Typical value found in literature
-elseif strcmp(SR_method, 'BPAD_RR')
+%elseif strcmp(SR_method, 'BPAD_RR')
+elseif strcmp(SR_method, 'LM_CSS')
     % Specify the number of neighbours K to be considered
     in_config.param.Smin = 50; % To ensure there are enough points to 
                                % compute regression
