@@ -34,3 +34,7 @@ he hallucinated. The final patch is then hallucinated using ridge  regression.
     Unzip the file and make sure that the DATASET/ folder is placed in the root directory.
 
 2. Download the SparseLab folder in the MATLAB/ folder of this project. https://sparselab.stanford.edu/
+
+To run this code one must set SR_method to one of the above values e.g. LM_CSS will run the LM-CSS algorithm.
+
+[1] R. A. Farrugia and C. Guillemot, "Face Hallucination Using Linear Models of Coupled Sparse Support," in IEEE Transactions on Image Processing, vol. 26, no. 9, pp. 4562-4577, Sept. 2017.
